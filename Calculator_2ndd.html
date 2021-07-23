@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  
+    <script src="Calculator_2ndd.js"></script>
+    <style>
+        .meracalci{
+            align-items: center;
+    text-align: center;
+    position: relative;
+    height: 305px;
+    left: 519px;
+    top: 23px;
+    border: 1px solid transparent;
+    width: 253px;
+    background-color: rgb(87 87 87);
+    border-radius: 15px;
+    box-shadow: 4px 6px 3px #444242;
+        }
+
+        .apnatext {
+            margin: 8px 3px;
+    font-size: 23px;
+    box-shadow: 1px 1px 3px #848080;
+    text-align: center;
+    position: relative;
+    left: 14px;
+    /* font-family: system-ui; */
+    top: 26px;
+    align-items: center;
+    /* font-family: 'Merriweather Sans', sans-serif; */
+    width: 46px;
+    border-radius: 8px;
+    font-size: 28px;
+    border: 0px;
+        }
+
+        #outputfield{
+            width: 223px;
+    height: 52px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    background-color: rgb(188 209 192);
+    position: relative;
+    box-shadow: -1px 0px 16px rgb(44 45 44);
+    top: 19px;
+        }
+
+        #eql{
+            background-color: #f5a34d;
+            color:white;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="meracalci">
+    <table>
+        <form>
+            <tr><input type="text" id="outputfield" name="Mytext"></tr>
+        <tr>
+            <td><input type="button" class="apnatext" name="Mytext" onclick="show(7)" value=7></td>
+            <td><input type="button" class="apnatext" name="Mytext" onclick="show(8)" value=8></td>
+            <td><input type="button" class="apnatext" name="Mytext" onclick="show(9)" value=9></td>
+            <td><input type="button" class="apnatext" name="Mytext" onclick="show('/')" value="/"></td>
+        </tr>
+        <tr>
+            <td><input type="button" class="apnatext" name="Mytext" onclick="show(4)" value=4></td>
+            <td><input type="button" class="apnatext" name="Mytext" onclick="show(5)" value=5></td>
+            <td><input type="button" class="apnatext" name="Mytext" onclick="show(6)" value=6></td>
+            <td><input type="button" class="apnatext" name="Mytext" onclick="show('*')" value="x"></td>
+        </tr>
+        <tr>
+            <td><input type="button" class="apnatext" name="Mytext" onclick="show(1)" value=1></td>
+            <td><input type="button" class="apnatext" name="Mytext" onclick="show(2)" value=2></td>
+            <td><input type="button" class="apnatext" name="Mytext" onclick="show(3)" value=3></td>
+            <td><input type="button" class="apnatext" name="Mytext" onclick="show('-')" value="-"></td>
+        </tr>
+        <tr>
+            <td><input type="button" class="apnatext" name="Mytext" onclick="show(0)" value=0></td>
+            <td><input type="button" class="apnatext" name="Mytext" onclick="show('.')" value="."></td>
+            <td><input type="button" class="apnatext" name="Mytext" onclick="show('+')" value="+"></td>
+            <td><input type="button" class="apnatext" id="eql" name="Mytext" onclick="equal()" value="="></td>
+        </tr>
+    </form>
+
+
+    </table>
+    </div>
+    
+</body>
+</html>
